@@ -1,5 +1,39 @@
-header {
-  background-color: #FF6060;
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+@media (max-width: 768px) {
+  .header {
+    margin: 20px;
+  }
+}
+.header .headerLinks ul {
+  display: flex;
+  list-style: none;
+  gap: 57px;
+}
+@media (max-width: 768px) {
+  .header .headerLinks ul {
+    gap: 26px;
+  }
+}
+.header .headerLinks ul a {
   color: #000000;
-  padding: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .header .headerLinks ul a {
+    font-size: 12px;
+  }
+}
+.header .headerLinks ul a.activeLink {
+  text-decoration: underline;
 }/*# sourceMappingURL=Header.css.map */

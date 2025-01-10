@@ -1,7 +1,45 @@
 @import "./variables";
 
-header {
-    background-color: $primary-color;
-    color: $secondary-color;
-    padding: 20px;
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $primary-font;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 45px;
+
+  @media (max-width: 768px) {
+    margin: 20px;
+  }
+
+  .headerLinks {
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 57px;
+
+      @media (max-width: 768px) {
+        gap: 26px;
+      }
+
+      a {
+        color: $primary-font-color;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 24px;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+
+
+        &.activeLink {          
+          text-decoration: underline;      
+          }          
+        }
+      }
+    }
   }
