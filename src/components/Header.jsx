@@ -3,15 +3,16 @@
 */
 
 import { Link } from "react-router-dom" 
+import "../Styles/Header.css"
 
 function Header() {
   return (
-    <header style={{ padding: '10px', backgroundColor: '#f0f0f0' }}>
+    <header className="header">
       <nav>
-        <Link to="/" style={{ marginRight: '15px' }}>Accueil</Link>
-        <Link to="/a-propos" style={{ marginRight: '15px' }}>À propos</Link>
-        <Link to="/logement/1" style={{ marginRight: '15px' }}>Fiche logement 1</Link>
-        <Link to="/*" style={{ marginRight: '15px' }}>Erreur 404</Link>
+        <Link to="/" >Accueil</Link>
+        <Link to="/a-propos" >À propos</Link>
+        <Link to="/logement/1">Fiche logement 1</Link>
+        <Link to="/*" >Erreur 404</Link>
       </nav>
     </header>
   );

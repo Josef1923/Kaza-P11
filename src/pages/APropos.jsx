@@ -6,7 +6,7 @@
 
 
 function APropos () {
-    return <h1>APropos</h1>
+    return <h1>A Propos</h1>
 }
 
 export default APropos
