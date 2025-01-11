@@ -35,5 +35,6 @@
   }
 }
 .header .headerLinks ul a.activeLink {
-  text-decoration: underline;
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
 }/*# sourceMappingURL=Header.css.map */

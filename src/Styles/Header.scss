@@ -36,8 +36,9 @@
         }
 
 
-        &.activeLink {          
-          text-decoration: underline;      
+        &.activeLink {                   
+          border-bottom: 2px solid;
+          padding-bottom: 3px;
           }          
         }
       }
