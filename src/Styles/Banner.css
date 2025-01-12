@@ -1,1 +1,41 @@
-/* Banner.css *//*# sourceMappingURL=Banner.css.map */
+/* Banner.css */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.banner .bannerImg {
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .banner .bannerImg {
+    height: 111px;
+    border-radius: 10px;
+  }
+}
+.banner .HomeBannerImg {
+  filter: brightness(40%);
+}
+.banner .bannerText {
+  position: absolute;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+@media (max-width: 768px) {
+  .banner .bannerText {
+    font-size: 24px;
+    text-shadow: none;
+    margin-left: 16px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=Banner.css.map */

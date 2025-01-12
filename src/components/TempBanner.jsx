@@ -5,17 +5,20 @@
 import PropTypes from "prop-types"
 import "../Styles/Banner.css"
 
-function Banner({ images }) {
+function Banner({ images, className, text }) {
     return (
         <div className="banner">
-          <img src={images} alt="banner" className="bannerImg" />
+          <img src={images} alt="banner" className={`bannerImg ${className}`}/>
+          {text && <p className="bannerText">{text}</p>}
         </div>
     );
 }
 
-// Valisdation props
+// Validation props
 Banner.propTypes = {
-    images: PropTypes.string.isRequired,
+    images: PropTypes.string,
+    className: PropTypes.string,
+    text: PropTypes.string
 }
 
 export default Banner

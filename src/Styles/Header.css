@@ -37,5 +37,9 @@
 }
 .header .headerLinks ul a.activeLink {
   border-bottom: 2px solid;
-  padding-bottom: 1px;
+}
+@media (max-width: 768px) {
+  .header .headerLinks ul a.activeLink {
+    border-bottom: 1px solid;
+  }
 }/*# sourceMappingURL=Header.css.map */

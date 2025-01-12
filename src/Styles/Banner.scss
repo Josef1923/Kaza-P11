@@ -1,1 +1,43 @@
+@import "./variables";
 /* Banner.css */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .bannerImg {
+        width: 1240px;
+        height: 223px;
+        border-radius: 25px;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            height: 111px;
+            border-radius: 10px;
+          }
+    }
+
+    .HomeBannerImg {        
+        filter: brightness(40%);
+    } 
+
+    .bannerText {
+        position: absolute;
+        color: $secondary-font-color;
+        font-family: $primary-font;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        z-index: 1;
+        text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+            text-shadow: none;
+            margin-left: 16px;
+            text-align: left;
+          }
+    }
+}
+    
