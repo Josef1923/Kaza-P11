@@ -1,7 +1,3 @@
-/*
-  Composant Footer à utiliser sur les différentes pages du site.
-*/
-
 import "../Styles/Footer.css"
 
 function Footer() {

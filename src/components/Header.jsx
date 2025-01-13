@@ -1,7 +1,3 @@
-/*
-  Composant Header à utiliser sur les différentes pages du site.
-*/
-
 import { NavLink } from "react-router-dom"
 import "../Styles/Header.css"
 

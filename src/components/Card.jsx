@@ -1,6 +1,3 @@
-/*
-  Composant card utilisé sur page d'accueil.
-*/
 import PropTypes from "prop-types"
 import "../Styles/Card.css"
 
