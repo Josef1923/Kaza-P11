@@ -2,7 +2,7 @@
   Composant pour la page d'accueil.
 */
 
-import Banner from "../components/TempBanner"
+import Banner from "../components/Banner"
 import BannerHome from "../assets/Images/BannerHome.png"
 import "../Styles/Home.css"
 import Card from "../components/Card"

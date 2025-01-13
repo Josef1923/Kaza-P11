@@ -2,7 +2,7 @@
   Composant pour la page "À propos".
 */
 
-import Banner from "../components/TempBanner"
+import Banner from "../components/Banner"
 import BannerAPropos from "../assets/Images/BannerAPropos.png"
 
 function APropos () {
