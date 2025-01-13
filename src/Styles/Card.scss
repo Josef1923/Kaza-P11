@@ -6,13 +6,21 @@
   position: relative; 
   margin-top: 25px;
   margin-bottom: 25px;
+  max-width: 100%;
 
   .cardCover {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: 340px;
     object-fit: cover;
-    border-radius: 10px;      
-  }}
+    border-radius: 10px; 
+    
+    @media (max-width: 768px) {
+      max-width: 500px;
+      height: 255px;
+    }
+  }
+}
  
   .cardTitle {
     font-family: $primary-font;
@@ -24,6 +32,8 @@
     left: 20px;
     color : $secondary-font-color;
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
-    }
 
-  
+    @media (max-width: 768px) {
+      bottom: 15px;
+    }
+  }

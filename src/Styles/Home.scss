@@ -16,4 +16,12 @@
     align-content: space-evenly;
     padding-top: 31px;
     padding-bottom: 18px;
+
+    @media (max-width: 768px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: white;
+    }
 }

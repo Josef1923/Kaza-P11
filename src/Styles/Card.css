@@ -3,13 +3,21 @@
   position: relative;
   margin-top: 25px;
   margin-bottom: 25px;
+  max-width: 100%;
 }
 .card .cardCover {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .card .cardCover {
+    max-width: 500px;
+    height: 255px;
+  }
 }
 
 .cardTitle {
@@ -22,4 +30,9 @@
   left: 20px;
   color: #FFFFFF;
   text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+@media (max-width: 768px) {
+  .cardTitle {
+    bottom: 15px;
+  }
 }/*# sourceMappingURL=Card.css.map */
