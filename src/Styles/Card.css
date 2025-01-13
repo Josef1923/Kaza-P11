@@ -1,0 +1,25 @@
+/* Card.css */
+.card {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.card .cardCover {
+  width: 340px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}/*# sourceMappingURL=Card.css.map */
