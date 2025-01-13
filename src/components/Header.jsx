@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom"
 import "../Styles/Header.css"
+import LogoSmall from "../assets/Logo/LogoSmall.png"
+import LogoBig from "../assets/Logo/LogoBig.png"
 
 function Header() {
   return (
     <header className="header">
       <div className="logo">
         <picture>
-          <source srcSet="src/assets/Logo/LogoSmall.png" media="(max-width: 768px)" />
-          <source srcSet="src/assets/Logo/LogoBig.png" media="(min-width: 769px)" />
-          <img src="src/assets/Logo/LogoBig.png" alt="Kasa Logo" />
+          <source srcSet={LogoSmall} media="(max-width: 768px)" />
+          <img src={LogoBig} alt="Logo kaza" />
         </picture>
       </div>
       <nav className="headerLinks">
