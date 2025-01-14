@@ -8,11 +8,11 @@ function Dropdown({ title, description }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div>
+        <div className="collapseContainer">
             <button className="collapseButton" >{title}
                 <img src={Vector} onClick={() => setIsOpen(!isOpen)} className={`collapseVector ${isOpen ? "open" : ""}`}></img>
             </button>
-            {isOpen && <p>{description}</p>}
+            <div className={`collapseContent ${isOpen ? "open" : ""}`}>{description}</div>
         </div>
     );
 }
