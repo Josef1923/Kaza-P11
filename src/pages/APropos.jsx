@@ -1,6 +1,7 @@
 import Banner from "../components/Banner"
 import BannerAPropos from "../assets/Images/BannerAPropos.png"
 import Dropdown from "../components/Collapse"
+import "../styles/APropos.css"
 
 function APropos() {
 
@@ -29,8 +30,8 @@ function APropos() {
 
   return (
     <>
-      <div>
-        <Banner images={BannerAPropos} />
+      <div >
+        <Banner images={BannerAPropos} className="aboutImg"/>
       </div>
       <div>
         {aboutList.map((list, index) => (
