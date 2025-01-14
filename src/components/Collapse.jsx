@@ -1,14 +1,17 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import Vector from "../assets/svg/Vector.svg";
+import "../Styles/Collapse.css";
 
-function Dropdown({title, description}) {
+function Dropdown({ title, description }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div>
-            <button >{title}<img src={Vector} onClick={() => setIsOpen(!isOpen)}></img></button>
+            <button className="collapseButton" >{title}
+                <img src={Vector} onClick={() => setIsOpen(!isOpen)} className={`collapseVector ${isOpen ? "open" : ""}`}></img>
+            </button>
             {isOpen && <p>{description}</p>}
         </div>
     );
@@ -16,8 +19,8 @@ function Dropdown({title, description}) {
 
 // Validation props
 Dropdown.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string
+    title: PropTypes.string,
+    description: PropTypes.string
 }
 
 

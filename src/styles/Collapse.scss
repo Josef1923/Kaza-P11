@@ -1,0 +1,32 @@
+@import "./variables";
+
+.collapseButton {
+    background-color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    color: $secondary-font-color;
+    border-radius: 5px;
+    border: none;
+    height: 53px;
+    width: 200px;
+    position: relative;    
+    text-align: left;
+    padding: 0 15px;
+}
+
+.collapseVector {
+    width: 24px;
+    height: 13.71px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 15px;
+
+    @media (max-width: 768px) {
+        width: 16px;
+        height: 9.14px;
+    }
+}
+
+.collapseVector.open {
+    transform: rotate(-180deg);
+}
