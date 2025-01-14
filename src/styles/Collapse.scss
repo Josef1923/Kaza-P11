@@ -3,6 +3,7 @@
 .collapseContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .collapseButton {
@@ -21,6 +22,7 @@
 
     @media (max-width: 768px) {
         font-size: 13px;
+        height: 30px;
     }
 }
 
@@ -36,6 +38,7 @@
     @media (max-width: 768px) {
         width: 16px;
         height: 9.14px;
+        top: 10px;
     }
 }
 

@@ -33,7 +33,7 @@ function APropos() {
       <div >
         <Banner images={BannerAPropos} className="aboutImg"/>
       </div>
-      <div>
+      <div className="globalCollapsesContainer">
         {aboutList.map((list, index) => (
           <Dropdown key={index} title={list.title} description={list.content} />
         ))}

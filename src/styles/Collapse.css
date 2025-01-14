@@ -1,6 +1,7 @@
 .collapseContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .collapseButton {
@@ -20,6 +21,7 @@
 @media (max-width: 768px) {
   .collapseButton {
     font-size: 13px;
+    height: 30px;
   }
 }
 
@@ -36,6 +38,7 @@
   .collapseVector {
     width: 16px;
     height: 9.14px;
+    top: 10px;
   }
 }
 
