@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import Vector from "../assets/svg/Vector.svg";
 
 function Dropdown({title, description}) {
 
@@ -7,7 +8,7 @@ function Dropdown({title, description}) {
 
     return (
         <div>
-            <button onClick={() => setIsOpen(!isOpen)}>{title}</button>
+            <button onClick={() => setIsOpen(!isOpen)}>{title}<img src={Vector}></img></button>
             {isOpen && <p>{description}</p>}
         </div>
     );

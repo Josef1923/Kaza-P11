@@ -1,6 +1,6 @@
 import Banner from "../components/Banner"
 import BannerAPropos from "../assets/Images/BannerAPropos.png"
-import Dropdown from "../components/Dropdown"
+import Dropdown from "../components/Collapse"
 
 function APropos() {
 
