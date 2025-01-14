@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useHousing() {
+function useHousing() {
     const [housingDatas, setHousingDatas] = useState([]);
 
     useEffect(() => {
@@ -12,3 +12,5 @@ export function useHousing() {
 
     return housingDatas;
 }
+
+export { useHousing };
