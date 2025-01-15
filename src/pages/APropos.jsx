@@ -29,7 +29,7 @@ function APropos() {
   ];
 
   return (
-    <>
+    <main>
       <div >
         <Banner images={BannerAPropos} className="aboutImg"/>
       </div>
@@ -38,7 +38,7 @@ function APropos() {
           <Dropdown key={index} title={list.title} description={list.content} />
         ))}
       </div>
-    </>
+    </main>
   )
 }
 

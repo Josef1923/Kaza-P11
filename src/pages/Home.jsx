@@ -15,7 +15,7 @@ function Home() {
   };
     
   return (
-    <>
+    <main>
       <div>
         <Banner images={BannerHome} className="homeBannerImg"
           text="Chez vous, partout et ailleurs" />
@@ -25,7 +25,7 @@ function Home() {
           <Card key={housing.id} cover={housing.cover} title={housing.title} onClick={() => handleCardClick(housing.id)} />
         ))}
       </div>
-    </>
+    </main>
   )
 }
 
