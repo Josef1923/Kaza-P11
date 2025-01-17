@@ -1,6 +1,6 @@
 import Banner from "../components/Banner"
 import BannerAPropos from "../assets/Images/BannerAPropos.png"
-import Dropdown from "../components/Collapse"
+import Collapse from "../components/Collapse"
 import "../styles/APropos.css"
 
 function APropos() {
@@ -35,7 +35,7 @@ function APropos() {
       </div>
       <div className="globalCollapsesContainer">
         {aboutList.map((list, index) => (
-          <Dropdown key={index} title={list.title} description={list.content} />
+          <Collapse key={index} title={list.title} description={list.content} />
         ))}
       </div>
     </main>

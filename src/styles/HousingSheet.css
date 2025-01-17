@@ -2,6 +2,7 @@
   font-family: "Montserrat", sans-serif;
   display: block;
   width: 1240px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .ficheLogement .temporary {
@@ -18,10 +19,33 @@
 .ficheLogement h1 {
   color: #FF6060;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 36px;
   margin-top: 30px;
 }
 .ficheLogement p {
   font-weight: 500;
   font-size: 18px;
+}
+.ficheLogement .infos {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  max-width: 100%;
+}
+.ficheLogement .infos .infoPart2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  text-align: right;
+}
+.ficheLogement .housingCollapseContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+.ficheLogement .housingCollapseContainer > * {
+  width: 580px;
+  margin: 0;
 }/*# sourceMappingURL=HousingSheet.css.map */

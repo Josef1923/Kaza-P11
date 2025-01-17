@@ -3,7 +3,7 @@ import { useState } from "react";
 import Vector from "../assets/svg/Vector.svg";
 import "../Styles/Collapse.css";
 
-function Dropdown({ title, description }) {
+function Collapse({ title, description }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -18,10 +18,10 @@ function Dropdown({ title, description }) {
 }
 
 // Validation props
-Dropdown.propTypes = {
+Collapse.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string
 }
 
 
-export default Dropdown;
+export default Collapse;

@@ -4,6 +4,7 @@
     font-family: $primary-font;
     display: block;
     width: 1240px;
+    max-width: 100%;
     margin: 0 auto;
 
 
@@ -23,12 +24,41 @@
     h1 {
         color: $primary-color;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 36px;
         margin-top: 30px;
     }
 
     p {
         font-weight: 500;
         font-size: 18px;
+    }
+
+    .infos
+     {
+        display: flex;
+        justify-content: space-between;
+        width: 1240px;
+        max-width: 100%;
+
+        .infoPart2{
+            display: flex;           
+            justify-content: flex-end; 
+            margin-top: 24px;
+            text-align: right; 
+        }
+    }
+
+    .housingCollapseContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        margin-bottom: 50px;
+        align-items: flex-start;
+
+        > * {
+            width: 580px;
+            margin: 0;
+        }
+    
     }
 }

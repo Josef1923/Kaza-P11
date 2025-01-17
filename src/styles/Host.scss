@@ -1,0 +1,22 @@
+@import "./variables";
+
+.hostContainer {
+    display: flex;
+    width: 167px;
+    height: 64px;
+    gap:10px;
+
+    .hostPicture {
+        border-radius: 64px;
+    }
+
+    .hostName {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: right;
+        align-items: center;
+        display: flex;
+        line-height: 26px;
+    }
+}
