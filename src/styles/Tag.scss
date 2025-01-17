@@ -1,0 +1,13 @@
+@import "./variables";
+
+.tag {
+    background-color: $primary-color;
+    width: 200px;
+    height:25px;
+    border-radius: 10px;
+    color: $secondary-font-color;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
