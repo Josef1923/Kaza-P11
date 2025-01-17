@@ -48,4 +48,12 @@
 .ficheLogement .housingCollapseContainer > * {
   width: 580px;
   margin: 0;
+}
+.ficheLogement .housingCollapseContainer > * ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.ficheLogement .housingCollapseContainer > * .collapseContent {
+  height: 172px;
 }/*# sourceMappingURL=HousingSheet.css.map */
