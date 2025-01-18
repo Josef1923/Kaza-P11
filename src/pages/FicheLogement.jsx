@@ -5,6 +5,7 @@ import "../styles/HousingSheet.css"
 import Tag from "../components/Tag"
 import Host from "../components/Host"
 import Collapse from "../components/Collapse";
+import Rating from "../components/Rating";
 
 function FicheLogement() {
     const { id } = useParams();  //récupère l'id URL  
@@ -30,6 +31,7 @@ function FicheLogement() {
                 </div>
                 <div className="infoPart2">
                     <Host name={housingData.host.name} picture={housingData.host.picture}></Host>
+                    <Rating rate={housingData.rating}></Rating>
                 </div>
             </section>
 

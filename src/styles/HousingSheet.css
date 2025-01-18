@@ -62,7 +62,7 @@
   width: 5px;
 }
 .ficheLogement .housingCollapseContainer > * .collapseContent::-webkit-scrollbar-thumb {
-  background-color: grey;
+  background-color: #ABB2B9;
   border-radius: 4px;
 }
 .ficheLogement .housingCollapseContainer > * .collapseContent::-webkit-scrollbar-track {
