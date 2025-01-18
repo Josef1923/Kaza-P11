@@ -13,7 +13,7 @@ function Collapse({ title, description }) {
                 <img src={Vector} onClick={() => setIsOpen(!isOpen)} className={`collapseVector ${isOpen ? "open" : ""}`}></img>
             </button>
             <div className={`collapseContent ${isOpen ? "open" : ""}`}>
-                <p className="innerContent">{description}</p>
+                <div className="innerContent">{description}</div>
                 </div>
         </div>
     );
@@ -22,7 +22,7 @@ function Collapse({ title, description }) {
 // Validation props
 Collapse.propTypes = {
     title: PropTypes.string,
-    description: PropTypes.string
+    description: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 }
 
 

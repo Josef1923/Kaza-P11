@@ -68,6 +68,6 @@
 .ficheLogement .housingCollapseContainer > * .collapseContent::-webkit-scrollbar-track {
   background-color: #f0f0f0;
 }
-.ficheLogement .housingCollapseContainer > * p {
+.ficheLogement .housingCollapseContainer > * .p {
   font-weight: 400;
 }/*# sourceMappingURL=HousingSheet.css.map */
