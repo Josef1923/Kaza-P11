@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+   
 }
 
 .collapseButton {
@@ -22,7 +24,7 @@
 
     @media (max-width: 768px) {
         font-size: 13px;
-        height: 30px;
+        height: 30px;   
     }
 }
 

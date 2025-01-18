@@ -4,12 +4,25 @@
   height: 64px;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .hostContainer {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+  }
+}
 .hostContainer .hostPicture {
-  width: 64px; /* Taille fixe */
-  height: 64px; /* Taille fixe */
-  border-radius: 50%; /* Cercle parfait */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 768px) {
+  .hostContainer .hostPicture {
+    width: 32px;
+    height: 32px;
+  }
 }
 .hostContainer .hostName {
   color: #FF6060;
@@ -19,4 +32,9 @@
   align-items: center;
   display: flex;
   line-height: 26px;
+}
+@media (max-width: 768px) {
+  .hostContainer .hostName {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Host.css.map */

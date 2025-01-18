@@ -8,4 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+    width: 100px;
+  }
 }/*# sourceMappingURL=Tag.css.map */
