@@ -5,7 +5,11 @@
   gap: 10px;
 }
 .hostContainer .hostPicture {
-  border-radius: 64px;
+  width: 64px; /* Taille fixe */
+  height: 64px; /* Taille fixe */
+  border-radius: 50%; /* Cercle parfait */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hostContainer .hostName {
   color: #FF6060;
