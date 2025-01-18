@@ -22,7 +22,7 @@ function Collapse({ title, description }) {
 // Validation props
 Collapse.propTypes = {
     title: PropTypes.string,
-    description: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
+    description: PropTypes.node
 }
 
 
