@@ -38,8 +38,8 @@ function FicheLogement() {
                     <Collapse title="Description" description={housingData.description} />
                     <Collapse title="Équipements" description={(
                         <ul>
-                            {housingData.equipments.map((item, index) => (
-                                <li key={index}>{item}</li>
+                            {housingData.equipments.map((list, index) => (
+                                <li key={index}>{list}</li>
                             ))}
                         </ul>
                     )} />

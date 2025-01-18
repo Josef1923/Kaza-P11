@@ -56,4 +56,18 @@
 }
 .ficheLogement .housingCollapseContainer > * .collapseContent {
   height: 172px;
+  overflow-y: auto;
+}
+.ficheLogement .housingCollapseContainer > * .collapseContent::-webkit-scrollbar {
+  width: 5px;
+}
+.ficheLogement .housingCollapseContainer > * .collapseContent::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 4px;
+}
+.ficheLogement .housingCollapseContainer > * .collapseContent::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+.ficheLogement .housingCollapseContainer > * p {
+  font-weight: 400;
 }/*# sourceMappingURL=HousingSheet.css.map */
