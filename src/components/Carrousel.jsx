@@ -7,7 +7,7 @@ function Carrousel({ picture }) {
 
     return (
         <div className="carrouselContainer">
-            <img src={picture} className="carrouselPicture" ></img>
+            <img src={picture[0]} className="carrouselPicture" ></img>
             <span className="leftSlide">
                 <img src={CarrouselLeftSlideVector} />
             </span>

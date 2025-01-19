@@ -19,7 +19,7 @@ function FicheLogement() {
     return housingData &&
         <main className="ficheLogement">
             <section>
-                <Carrousel picture={housingData.pictures[0]}></Carrousel>
+                <Carrousel picture={housingData.pictures}></Carrousel>
             </section>
 
             <section className="infos">
