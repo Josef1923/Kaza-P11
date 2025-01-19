@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import Vector from "../assets/svg/Vector.svg";
+import Vector from "../assets/svg/CollapseVector.svg";
 import "../Styles/Collapse.css";
 
 function Collapse({ title, description }) {
