@@ -6,6 +6,7 @@ import Tag from "../components/Tag"
 import Host from "../components/Host"
 import Collapse from "../components/Collapse";
 import Rating from "../components/Rating";
+import Carrousel from "../components/Carrousel";
 
 function FicheLogement() {
     const { id } = useParams();  //récupère l'id URL  
@@ -18,7 +19,7 @@ function FicheLogement() {
     return housingData &&
         <main className="ficheLogement">
             <section>
-                <img src="../src/assets/images/BannerHome.png" className="temporary"></img>
+                <Carrousel picture={housingData.pictures[0]}></Carrousel>
             </section>
 
             <section className="infos">

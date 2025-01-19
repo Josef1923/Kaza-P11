@@ -5,14 +5,16 @@
   max-width: 100%;
   margin: 0 auto;
 }
-.ficheLogement .temporary {
+.ficheLogement .carrouselPicture {
   max-width: 100%;
   width: 1240px;
   height: 415px;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 768px) {
-  .ficheLogement .temporary {
+  .ficheLogement .carrouselPicture {
     height: 255px;
   }
 }
