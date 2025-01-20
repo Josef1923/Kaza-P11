@@ -30,4 +30,18 @@
   .carrouselContainer .rightSlide {
     right: 10px;
   }
+}
+.carrouselContainer .visualIndex {
+  position: absolute;
+  top: 375px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .carrouselContainer .visualIndex {
+    top: 220px;
+  }
 }/*# sourceMappingURL=Carrousel.css.map */

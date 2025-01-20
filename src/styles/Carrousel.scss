@@ -1,3 +1,5 @@
+@import "./Variables";
+
 .carrouselContainer {
     position: relative;
 
@@ -29,6 +31,20 @@
 
         @media (max-width: 768px) {
             right: 10px;
+        }
+    }
+
+    .visualIndex {
+        position: absolute;
+        top: 375px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $tertiary-color;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+        top: 220px;
         }
     }
 }

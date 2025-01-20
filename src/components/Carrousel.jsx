@@ -25,6 +25,7 @@ function Carrousel({ picture }) {
             <span className="rightSlide">
                 <img src={CarrouselRightSlideVector} onClick={rightSlide}/>
             </span>
+            <span className="visualIndex">{currentImageIndex + 1}/{picture.length}</span>
         </div>
     )
 }
