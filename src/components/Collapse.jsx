@@ -7,10 +7,14 @@ function Collapse({ title, description }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    const OpenCollapse = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
         <div className="collapseContainer">
             <button className="collapseButton" >{title}
-                <img src={Vector} onClick={() => setIsOpen(!isOpen)} className={`collapseVector ${isOpen ? "open" : ""}`}></img>
+                <img src={Vector} onClick={OpenCollapse} className={`collapseVector ${isOpen ? "open" : ""}`}></img>
             </button>
             <div className={`collapseContent ${isOpen ? "open" : ""}`}>
                 <div className="innerContent">{description}</div>
