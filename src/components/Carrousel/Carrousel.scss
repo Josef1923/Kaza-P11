@@ -1,0 +1,50 @@
+@use "../../Variables" as *;
+
+.carrouselContainer {
+    position: relative;
+
+    .leftSlide,
+    .rightSlide {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    
+        @media (max-width: 768px) {
+            img {
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+
+    .leftSlide {
+        left: 24px;
+
+        @media (max-width: 768px) {
+            left: 10px;
+        }
+    }
+
+    .rightSlide {
+        right: 24px;
+
+        @media (max-width: 768px) {
+            right: 10px;
+        }
+    }
+
+    .visualIndex {
+        position: absolute;
+        top: 375px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $tertiary-color;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+        top: 220px;
+        }
+    }
+}

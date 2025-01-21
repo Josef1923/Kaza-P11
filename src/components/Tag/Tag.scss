@@ -1,0 +1,18 @@
+@use "../../Variables" as *;
+
+.tag {
+    background-color: $primary-color;
+    width: 180px;
+    height:25px;
+    border-radius: 10px;
+    color: $secondary-font-color;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        width: 100px;
+    }
+}

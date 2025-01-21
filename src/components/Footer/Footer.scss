@@ -1,0 +1,34 @@
+@use "../../Variables" as *;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    color: $secondary-font-color;
+    text-align: center;
+    font-family: $primary-font;
+    height: 209px;
+    font-weight: 500;
+    font-size: 24px;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+
+    .logo {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 12px;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
