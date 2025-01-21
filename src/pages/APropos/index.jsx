@@ -1,7 +1,7 @@
-import Banner from "../../components/Banner/Banner"
+import Banner from "../../components/Banner"
 import BannerAPropos from "../../assets/Images/BannerAPropos.png"
-import Collapse from "../../components/Collapse/Collapse"
-import "./APropos.scss"
+import Collapse from "../../components/Collapse"
+import "./style.scss"
 
 function APropos() {
 

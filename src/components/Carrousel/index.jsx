@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import "./Carrousel.scss"
+import "./style.scss"
 import CarrouselLeftSlideVector from "../../assets/svg/CarrouselLeftSlideVector.svg"
 import CarrouselRightSlideVector from "../../assets/svg/CarrouselRightSlideVector.svg"
 import { useState } from "react"

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import "./Banner.scss"
+import "./style.scss"
 
 function Banner({ images, className, text }) {
     return (

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import "./Host.scss"
+import "./style.scss"
 
 function Host({ name, picture }) {
     return (

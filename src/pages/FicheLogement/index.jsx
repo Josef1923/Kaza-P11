@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useHousing } from "../../manager/FetchHousingData"
 import { useMemo } from "react";
-import "./HousingSheet.scss"
-import Tag from "../../components/Tag/Tag"
-import Host from "../../components/Host/Host"
-import Collapse from "../../components/Collapse/Collapse";
-import Rating from "../../components/Rating/Rating";
-import Carrousel from "../../components/Carrousel/Carrousel";
-import Error from "../404/404";
+import "./style.scss"
+import Tag from "../../components/Tag"
+import Host from "../../components/Host"
+import Collapse from "../../components/Collapse";
+import Rating from "../../components/Rating";
+import Carrousel from "../../components/Carrousel";
+import Error from "../404";
 
 function FicheLogement() {
     const { id } = useParams();  //récupère l'id URL  

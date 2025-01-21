@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import "./Card.scss"
+import "./style.scss"
 
 function Card({ cover, title, onClick }) {
     return (
