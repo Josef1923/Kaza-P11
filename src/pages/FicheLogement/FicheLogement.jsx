@@ -7,6 +7,7 @@ import Host from "../../components/Host/Host"
 import Collapse from "../../components/Collapse/Collapse";
 import Rating from "../../components/Rating/Rating";
 import Carrousel from "../../components/Carrousel/Carrousel";
+import Error from "../404/404";
 
 function FicheLogement() {
     const { id } = useParams();  //récupère l'id URL  
@@ -15,6 +16,10 @@ function FicheLogement() {
     const housingData = useMemo(() =>
         housingDatas.find((housingData) => housingData.id === id),
         [housingDatas, id]);
+
+    if (!housingData) {
+        return <Error/>
+    }
 
     return housingData &&
         <main className="ficheLogement">
