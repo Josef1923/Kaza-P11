@@ -13,8 +13,8 @@ function Collapse({ title, description }) {
 
     return (
         <div className="collapseContainer">
-            <button className="collapseButton" >{title}
-                <img src={Vector} onClick={OpenCollapse} className={`collapseVector ${isOpen ? "open" : ""}`}></img>
+            <button className="collapseButton">{title}
+                <img src={Vector} onClick={OpenCollapse} className={`collapseVector ${isOpen ? "open" : ""}`}alt={title} ></img>
             </button>
             <div className={`collapseContent ${isOpen ? "open" : ""}`}>
                 <div className="innerContent">{description}</div>

@@ -22,7 +22,7 @@ function Home() {
       </div>
       <div className="homeContainer">
         {housingDatas && housingDatas.map((housing) => (
-          <Card key={housing.id} cover={housing.cover} title={housing.title} onClick={() => handleCardClick(housing.id)} />
+          <Card key={housing.id} cover={housing.cover} title={housing.title} onClick={() => handleCardClick(housing.id)}/>
         ))}
       </div>
     </main>

@@ -18,12 +18,12 @@ function Carrousel({ picture }) {
 
     return (
         <div className="carrouselContainer">
-            <img src={picture[currentImageIndex]} className="carrouselPicture" ></img>
+            <img src={picture[currentImageIndex]} className="carrouselPicture"  alt="Photo de l'hébergement"></img>
             <span className="leftSlide">
-                <img src={CarrouselLeftSlideVector} onClick={leftSlide}/>
+                <img src={CarrouselLeftSlideVector} onClick={leftSlide}  alt="Afficher l'image précédente"/>
             </span>
             <span className="rightSlide">
-                <img src={CarrouselRightSlideVector} onClick={rightSlide}/>
+                <img src={CarrouselRightSlideVector} onClick={rightSlide}  alt="Afficher l'image suivante"/>
             </span>
             <span className="visualIndex">{currentImageIndex + 1}/{picture.length}</span>
         </div>

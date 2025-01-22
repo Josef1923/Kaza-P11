@@ -31,12 +31,14 @@ function APropos() {
   return (
     <main>
       <div >
-        <Banner images={BannerAPropos} className="aboutImg"/>
+        <Banner images={BannerAPropos} className="aboutImg" />
       </div>
       <div className="globalCollapsesContainer">
-        {aboutList.map((list, index) => (
-          <Collapse key={index} title={list.title} description={list.content} />
-        ))}
+        {
+          aboutList.map((list, index) => (
+            <Collapse key={index} title={list.title} description={list.content} />
+          ))
+        }
       </div>
     </main>
   )

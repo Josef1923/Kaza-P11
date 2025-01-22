@@ -15,13 +15,14 @@ function FicheLogement() {
 
     const housingData = useMemo(() =>
         housingDatas.find((housingData) => housingData.id === id),
-        [housingDatas, id]);
+        [housingDatas, id]
+    );
 
     if (!housingData) {
-        return <Error/>
+        return <Error />
     }
 
-    return housingData &&
+    return housingData && (
         <main className="ficheLogement">
             <section>
                 <Carrousel picture={housingData.pictures}></Carrousel>
@@ -32,7 +33,9 @@ function FicheLogement() {
                     <h1>{housingData.title}</h1>
                     <p>{housingData.location}</p>
                     <div className="tagContainer">
-                        {housingData.tags.map((tag, index) => (<Tag key={index} tag={tag} />))}
+                        {
+                            housingData.tags.map((tag, index) => (<Tag key={index} tag={tag} />))
+                        }
                     </div>
                 </div>
                 <div className="infoPart2">
@@ -44,16 +47,17 @@ function FicheLogement() {
             <section>
                 <div className="housingCollapseContainer" >
                     <Collapse title="Description" description={housingData.description} />
-                    <Collapse title="Équipements" description={(
+                    <Collapse title="Équipements" description={
                         <ul>
                             {housingData.equipments.map((list, index) => (
                                 <li key={index}>{list}</li>
                             ))}
                         </ul>
-                    )} />
+                    } />
                 </div>
             </section>
         </main>
+    )
 }
 
 export default FicheLogement
