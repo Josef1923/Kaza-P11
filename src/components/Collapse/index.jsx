@@ -11,14 +11,27 @@ function Collapse({ title, description }) {
         setIsOpen(!isOpen)
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            OpenCollapse();
+            event.preventDefault();
+        }
+    };
+
     return (
         <div className="collapseContainer">
             <button className="collapseButton">{title}
-                <img src={Vector} onClick={OpenCollapse} className={`collapseVector ${isOpen ? "open" : ""}`}alt={title} ></img>
+                <img src={Vector}
+                    onClick={OpenCollapse}
+                    className={`collapseVector ${isOpen ? "open" : ""}`}
+                    alt={title}
+                    tabIndex={0}
+                    onKeyDown={handleKeyDown}
+                ></img>
             </button>
             <div className={`collapseContent ${isOpen ? "open" : ""}`}>
                 <div className="innerContent">{description}</div>
-                </div>
+            </div>                  
         </div>
     );
 }
