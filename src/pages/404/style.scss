@@ -13,21 +13,19 @@
     h1 {
         font-weight: 700;
         font-size: 288px;
-        margin-top: 139px;
-        margin-bottom: 139px;
+        margin: 139px 0;
+
 
         @media (max-width: 768px) {
             font-size: 96px;
-            margin-top: 113px;
-            margin-bottom: 113px;
+            margin: 113px 0;
         }
     }
 
     h2 {
         font-weight: 500;
         font-size: 36px;
-        margin-bottom: 139px;
-        margin-top: 0px;
+        margin: 0 0 139px;
 
         @media (max-width: 768px) {
             font-size: 18px;

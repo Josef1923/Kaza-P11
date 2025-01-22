@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner"
-import BannerAPropos from "../../assets/Images/BannerAPropos.png"
+import BannerAPropos from "../../assets/images/BannerAPropos.png"
 import Collapse from "../../components/Collapse"
 import "./style.scss"
 

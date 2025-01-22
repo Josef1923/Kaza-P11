@@ -1,5 +1,5 @@
 import "./style.scss"
-import LogoFooter from "../../assets/Logo/LogoFooter.png"
+import LogoFooter from "../../assets/logo/LogoFooter.png"
 
 function Footer() {
   return (

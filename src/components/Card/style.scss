@@ -2,8 +2,7 @@
 
 .card {    
   position: relative; 
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   max-width: 100%;
   cursor: pointer;
 
@@ -14,8 +13,7 @@
     object-fit: cover;
     border-radius: 10px; 
     
-    @media (max-width: 768px) {
-      max-width: 500px;
+    @media (max-width: 768px) {      
       height: 255px;
     }
   }
@@ -31,6 +29,7 @@
     left: 20px;
     color : $secondary-font-color;
     text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+    
 
     @media (max-width: 768px) {
       bottom: 15px;
