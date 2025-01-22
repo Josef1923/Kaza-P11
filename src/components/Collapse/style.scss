@@ -26,6 +26,10 @@
         font-size: 13px;
         height: 30px;   
     }
+
+    .open & img {	
+        transform: rotate(-180deg);
+    }
 }
 
 .collapseVector {
@@ -44,10 +48,6 @@
     }
 }
 
-.collapseVector.open {
-    transform: rotate(-180deg);
-}
-
 .collapseContent {
     background-color: #F6F6F6;
     font-family: $primary-font;
@@ -62,7 +62,7 @@
     transition: max-height 0.3s ease;
     line-height: 25px;    
 
-    &.open {
+    .open & {
         max-height: 400px;        
     }
 
