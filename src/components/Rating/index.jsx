@@ -20,7 +20,7 @@ function Rating({ rate }) {
 
 // Validation props
 Rating.propTypes = {
-    rate: PropTypes.string,
+    rate: PropTypes.number,
 }
 
 export default Rating

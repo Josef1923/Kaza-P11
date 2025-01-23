@@ -40,7 +40,7 @@ function FicheLogement() {
                 </div>
                 <div className="infoPart2">
                     <Host name={housingData.host.name} picture={housingData.host.picture}></Host>
-                    <Rating rate={housingData.rating}></Rating>
+                    <Rating rate={parseInt(housingData.rating)}></Rating>
                 </div>
             </section>
 

@@ -122,31 +122,8 @@
             }
 
             .collapseContent {
-                height: 172px;
-                overflow-y: auto;
-
-                @media (max-width: 768px) {
-                    height: 140px;
-                }
-
-
-                &::-webkit-scrollbar {
-                    width: 5px;
-                }
-
-                &::-webkit-scrollbar-thumb {
-                    background-color: #ABB2B9;
-                    border-radius: 4px;
-                }
-
-                &::-webkit-scrollbar-track {
-                    background-color: #f0f0f0;
-                }
-            }
-
-            .p {
-                font-weight: 400;
-            }
+                height: auto;                           
+            }           
         }
     }
 }
