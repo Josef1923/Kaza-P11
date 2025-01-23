@@ -6,6 +6,8 @@ Ce projet a été réalisé dans le cadre de ma formation OpenClassrooms pour ob
 
 Objectif de ce projet: 
 
-*Créer des composants avec React
-*Développer les routes d'une application web avec React Router
-*Initialiser une application web avec un framework
+-Créer des composants avec React
+
+-Développer les routes d'une application web avec React Router
+
+-Initialiser une application web avec un framework
