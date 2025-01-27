@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import APropos from "./pages/APropos";
 import FicheLogement from "./pages/FicheLogement"
@@ -8,16 +8,16 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/a-propos" element={<APropos />} />
-          <Route path="/logement/:id" element={<FicheLogement />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-        <Footer />
-      </Router>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/a-propos" element={<APropos />} />
+        <Route path="/logement/:id" element={<FicheLogement />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

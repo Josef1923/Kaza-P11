@@ -4,7 +4,10 @@ function useHousing() {
     const [housingDatas, setHousingDatas] = useState([]);
 
     useEffect(() => {
-        fetch("/HousingDatas.json")
+
+        const dataUrl = `${import.meta.env.BASE_URL}HousingDatas.json`;
+
+        fetch(dataUrl)
             .then((response) => response.json())
             .then((data) => setHousingDatas(data))
             .catch((error) => console.error("Erreur lors du fetch des données", error));

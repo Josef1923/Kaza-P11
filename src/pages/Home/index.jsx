@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner"
-import BannerHome from "../../assets/Images/BannerHome.png"
+import BannerHome from "../../assets/images/BannerHome.png"
 import "./style.scss"
 import Card from "../../components/Card"
 import {useHousing} from "../../manager/FetchHousingData"
