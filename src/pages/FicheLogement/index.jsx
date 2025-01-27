@@ -11,15 +11,19 @@ import Error from "../404";
 
 function FicheLogement() {
     const { id } = useParams();  //récupère l'id URL  
-    const housingDatas = useHousing();
+    const { housingDatas, loading } = useHousing();
 
     const housingData = useMemo(() =>
         housingDatas.find((housingData) => housingData.id === id),
         [housingDatas, id]
     );
 
+    if (loading) {
+        return <div>Chargement...</div>;
+    }
+
     if (!housingData) {
-        return <Error />
+        return <Error />;
     }
 
     return housingData && (
